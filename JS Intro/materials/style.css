@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+  padding: 60px;
+  font-family: Helvetica,sans-serif;
+}
+h1 {
+  text-align: center;
+  color: #ff3366;
+}
+p {
+  font-size: 100px;
+  font-weight: bold;
+}
+.hello>span:nth-child(5n+1) {
+  color: #f33;
+}
+.hello>span:nth-child(5n+2) {
+  color: #fa3;
+}
+.hello>span:nth-child(5n+3) {
+  color: #0d0;
+}
+.hello>span:nth-child(5n+4) {
+  color: #0cd;
+}
+.hello>span:nth-child(5n+0) {
+  color: #66f;
+}
