@@ -7,11 +7,27 @@ h1 {
   text-align: center;
   color: #ff33aa;
 }
+.take-order p,
+.take-order div {
+  text-align: right;
+  width: 55%
+}
+.take-order:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 p {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 5px;
   color: #6633ff;
+}
+.take-order .sorry {
+  margin-top: 0px;
+  float: right;
+  width: 40%;
+  text-align: left;
 }
 .order-form .order {
   font-size: 24px;
@@ -51,6 +67,7 @@ p {
   margin-right: auto;
 }
 .bin {
+  position: relative;
   background-color: #666;
   display: inline-block;
   width: 160px;
@@ -60,6 +77,11 @@ p {
   border-radius: 80px / 44px;
   border: 4px solid #aaeeff;
   text-align: center;
+}
+.bin span {
+  position: relative;
+  color: #333;
+  top: 85px;
 }
 [title="vanilla"] {
   background-color: #ffeedd;
