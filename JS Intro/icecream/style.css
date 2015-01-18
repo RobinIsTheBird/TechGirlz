@@ -70,22 +70,48 @@ p {
 [title="chocolate"] {
   background-color: #dd8833;
 }
+@-webkit-keyframes present-bowl {
+  from {
+    width: 1px;
+    height: 1px;
+  }
+  to {
+    width: 300px;
+    height: 110px;
+    border-radius: 153px 153px 160px 160px / 82px 82px 108px 108px;
+    box-shadow: 0px 10px 40px -10px #000000;
+  }
+}
+@keyframes present-bowl {
+  from {
+    width: 1px;
+    height: 1px;
+  }
+  to {
+    width: 300px;
+    height: 110px;
+    border-radius: 153px 153px 160px 160px / 82px 82px 108px 108px;
+    box-shadow: 0px 10px 40px -10px #000000;
+  }
+}
 .bowl {
   position: absolute;
-  width: 300px;
-  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.filled-order {
+  -webkit-animation: present-bowl 500ms 100ms 1 linear normal;
+  animation: present-bowl 500ms 100ms 1 linear normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  top: -28px;
   left: 0px;
   right: 0px;
-  border-radius: 153px 153px 160px 160px / 82px 82px 108px 108px;
   border-color: #aaeeff;
   border-top: solid 4px #aaeeff;
   border-left: solid 4px #aaeeff;
   border-right: solid 4px #aaeeff;
   border-bottom: solid 40px #aaeeff;
-  top: -28px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 10px 40px -10px #000000;
 }
 .hidden {
   display: none;

@@ -6,6 +6,7 @@ window.onload = function () {
         var binMatch = binElements.is('[title="' + order + '"]');
         if (binMatch) {
             bowlElement.attr('title', order);
+            bowlElement.addClass('filled-order');
             bowlElement.removeClass('hidden');
         }
     });
